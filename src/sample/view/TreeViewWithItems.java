@@ -127,7 +127,7 @@ public class TreeViewWithItems<T extends HierarchyData<T>> extends TreeView<T> {
 
                     selected = (BaseItem) Controller.selectedTreeItem.getValue();
 
-                    Main.controller.switchScene(selected);
+                    Controller.switchScene(selected);
 
                 });
     }

@@ -1,6 +1,7 @@
 package sample.view.scenes;
 
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import sample.models.Army;
 import sample.models.BaseItem;
@@ -13,16 +14,17 @@ public class ArmyScene extends BaseScene implements ISceneSwitcher {
     public ArmyScene () {
         this.setFitToHeight(true);
         this.setFitToWidth(true);
-        this.setStyle("-fx-background-color:transparent;");
+        this.setStyle("-fx-background-color:blue;");
     }
-
 
     @Override
     public void buildScene(BaseItem item) {
-        this.getChildren().clear();
+        HBox inner = new HBox();
         Army army = (Army) item;
 
-
-        this.getChildren().add(new Label(army.toString()));
+        Label test = new Label(army.toString());
+        this.setStyle("-fx-background-color:Red;");
+        inner.getChildren().add(test);
+        this.setContent(inner);
     }
 }

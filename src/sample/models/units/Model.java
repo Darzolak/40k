@@ -9,24 +9,24 @@ import sample.models.HierarchyData;
 public abstract class Model extends BaseItem {
 
     //region Variables
-    protected int invulnerableSave;
-    protected int coverSave;
+    protected Integer invulnerableSave;
+    protected Integer coverSave;
     //endregion
 
     //region Getters and Setters
-    public int getInvulnerableSave() {
+    public Integer getInvulnerableSave() {
         return invulnerableSave;
     }
 
-    public void setInvulnerableSave(int invulnerableSave) {
+    public void setInvulnerableSave(Integer invulnerableSave) {
         this.invulnerableSave = invulnerableSave;
     }
 
-    public int getCoverSave() {
+    public Integer getCoverSave() {
         return coverSave;
     }
 
-    public void setCoverSave(int coverSave) {
+    public void setCoverSave(Integer coverSave) {
         this.coverSave = coverSave;
     }
     //endregion

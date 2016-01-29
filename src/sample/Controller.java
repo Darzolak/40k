@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.scene.control.SplitPane;
 import javafx.scene.control.TreeItem;
 import sample.models.Army;
 import sample.models.BaseItem;
@@ -7,6 +8,7 @@ import sample.view.scenes.ArmyScene;
 import sample.view.scenes.BaseScene;
 import sample.view.scenes.ISceneSwitcher;
 import sample.view.scenes.unitScenes.UnitScene;
+import sample.view.scenes.unitScenes.modelsScenes.InfantryScene;
 
 import java.util.HashMap;
 
@@ -18,14 +20,16 @@ public class Controller {
     public Controller() {
         switchStrategy.put("Army", new ArmyScene());
         switchStrategy.put("Unit", new UnitScene());
+        switchStrategy.put("Infantry", new InfantryScene());
 
     }
 
     public static void switchScene(BaseItem item) {
-        Main.content.getItems().remove(1);
+
         BaseScene switchedScene = (BaseScene) switchStrategy.get(item.getItemType());
         switchedScene.buildScene(item);
-        Main.content.getItems().add(switchedScene);
+        Main.contentPane.setContent(switchedScene);
+        SplitPane thing = Main.content;
     }
 
 }

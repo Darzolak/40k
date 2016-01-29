@@ -21,6 +21,7 @@ public class Main extends Application {
     public static Controller controller;
     public static Scene mainScene;
     public static SplitPane content;
+    public static ScrollPane contentPane;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -31,7 +32,7 @@ public class Main extends Application {
 
         Pane pane = getMainPane();
         controller = new Controller();
-        controller.army = setUpArmy();
+        Controller.army = setUpArmy();
         refreshTree();
 
         mainScene = new Scene(pane);
@@ -41,8 +42,8 @@ public class Main extends Application {
     private Army setUpArmy() {
         Army chaosSpaceMarines = new Army();
         Unit chaosMarines = new Unit();
-        Infantry chaosSpaceMarine = new Infantry(4,4,4,4,1,4,1,8,3);
-        Infantry chaosSpaceMarineCaptain = new Infantry(4,4,4,4,1,4,2,9,3);
+        Infantry chaosSpaceMarine = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarineCaptain = new Infantry("Aspiring Champion", 4,4,4,4,1,4,2,9,3);
 
         chaosMarines.addModels(chaosSpaceMarine);
         chaosMarines.addModels(chaosSpaceMarineCaptain);
@@ -58,10 +59,10 @@ public class Main extends Application {
 
         mainPane.setTop(menuBar);
 
-        this.refreshTree();
+        refreshTree();
 
         Pane informationPane = new Pane();
-        ScrollPane contentPane = new ScrollPane(informationPane);
+        contentPane = new ScrollPane(informationPane);
         content = new SplitPane();
 
 

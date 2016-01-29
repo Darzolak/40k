@@ -1,5 +1,7 @@
 package sample.view.scenes.unitScenes;
 
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import sample.models.BaseItem;
 import sample.models.Unit;
 import sample.view.scenes.BaseScene;
@@ -16,6 +18,12 @@ public class UnitScene extends BaseScene implements ISceneSwitcher {
 
     @Override
     public void buildScene(BaseItem item) {
-        Unit unit = (Unit) item;
+        HBox inner = new HBox();
+        Unit army = (Unit) item;
+
+        Label test = new Label(army.toString());
+        this.setStyle("-fx-background-color:Red;");
+        inner.getChildren().add(test);
+        this.setContent(inner);
     }
 }

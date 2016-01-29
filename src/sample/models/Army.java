@@ -24,4 +24,9 @@ public class Army extends BaseItem {
         return units;
     }
 
+    @Override
+    public String toString() {
+        return "akjsdnsbadfkjbsadkjfbsdf";
+    }
+
 }

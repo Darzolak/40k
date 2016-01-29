@@ -8,8 +8,9 @@ import sample.models.BaseItem;
  */
 public class Infantry extends BaseProfile {
 
-    public Infantry(int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
+    public Infantry(String name, int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
                     int attacks, int leadership, int armourSave) {
+        this.name = name;
         this.weaponSkill = weaponSkill;
         this.ballisticSkill = ballisticSkill;
         this.strength = strength;
@@ -22,7 +23,7 @@ public class Infantry extends BaseProfile {
         this.itemType = "Infantry";
     }
 
-    public Infantry(int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
+    public Infantry(String name, int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
                     int attacks, int leadership, int armourSave, int invulnerableSave, int coverSave) {
         this.weaponSkill = weaponSkill;
         this.ballisticSkill = ballisticSkill;
@@ -41,5 +42,10 @@ public class Infantry extends BaseProfile {
     @Override
     public ObservableList<BaseItem> getChildren() {
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

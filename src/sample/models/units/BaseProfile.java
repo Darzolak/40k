@@ -11,97 +11,97 @@ import java.util.List;
  */
 public abstract class BaseProfile extends Model {
     //region Variables
-    protected int moveSpeed;
-    protected int weaponSkill;
-    protected int ballisticSkill;
-    protected int strength;
-    protected int toughness;
-    protected int wounds;
-    protected int initiative;
-    protected int attacks;
-    protected int leadership;
-    protected int armourSave;
+    protected Integer moveSpeed;
+    protected Integer weaponSkill;
+    protected Integer ballisticSkill;
+    protected Integer strength;
+    protected Integer toughness;
+    protected Integer wounds;
+    protected Integer initiative;
+    protected Integer attacks;
+    protected Integer leadership;
+    protected Integer armourSave;
 
     //endregion
 
     //region Getters and Setters
-    public int getMoveSpeed() {
+    public Integer getMoveSpeed() {
         return moveSpeed;
     }
 
-    public void setMoveSpeed(int moveSpeed) {
+    public void setMoveSpeed(Integer moveSpeed) {
         this.moveSpeed = moveSpeed;
     }
 
-    public int getWeaponSkill() {
+    public Integer getWeaponSkill() {
         return weaponSkill;
     }
 
-    public void setWeaponSkill(int weaponSkill) {
+    public void setWeaponSkill(Integer weaponSkill) {
         this.weaponSkill = weaponSkill;
     }
 
-    public int getBallisticSkill() {
+    public Integer getBallisticSkill() {
         return ballisticSkill;
     }
 
-    public void setBallisticSkill(int ballisticSkill) {
+    public void setBallisticSkill(Integer ballisticSkill) {
         this.ballisticSkill = ballisticSkill;
     }
 
-    public int getStrength() {
+    public Integer getStrength() {
         return strength;
     }
 
-    public void setStrength(int strength) {
+    public void setStrength(Integer strength) {
         this.strength = strength;
     }
 
-    public int getToughness() {
+    public Integer getToughness() {
         return toughness;
     }
 
-    public void setToughness(int toughness) {
+    public void setToughness(Integer toughness) {
         this.toughness = toughness;
     }
 
-    public int getWounds() {
+    public Integer getWounds() {
         return wounds;
     }
 
-    public void setWounds(int wounds) {
+    public void setWounds(Integer wounds) {
         this.wounds = wounds;
     }
 
-    public int getInitiative() {
+    public Integer getInitiative() {
         return initiative;
     }
 
-    public void setInitiative(int initiative) {
+    public void setInitiative(Integer initiative) {
         this.initiative = initiative;
     }
 
-    public int getAttacks() {
+    public Integer getAttacks() {
         return attacks;
     }
 
-    public void setAttacks(int attacks) {
+    public void setAttacks(Integer attacks) {
         this.attacks = attacks;
     }
 
-    public int getLeadership() {
+    public Integer getLeadership() {
         return leadership;
     }
 
-    public void setLeadership(int leadership) {
+    public void setLeadership(Integer leadership) {
         this.leadership = leadership;
     }
 
-    public int getArmourSave() {
+    public Integer getArmourSave() {
         return armourSave;
     }
 
-    public void setArmourSave(int armourSave) {
+    public void setArmourSave(Integer armourSave) {
         this.armourSave = armourSave;
     }
 
