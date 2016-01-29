@@ -19,6 +19,7 @@ public class Infantry extends BaseProfile {
         this.attacks = attacks;
         this.leadership = leadership;
         this.armourSave = armourSave;
+        this.itemType = "Infantry";
     }
 
     public Infantry(int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
@@ -34,6 +35,7 @@ public class Infantry extends BaseProfile {
         this.armourSave = armourSave;
         this.invulnerableSave = invulnerableSave;
         this.coverSave = coverSave;
+        this.itemType = "Infantry";
     }
 
     @Override

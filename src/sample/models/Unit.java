@@ -13,7 +13,7 @@ public class Unit extends BaseItem {
     private ObservableList<BaseItem> models = observableArrayList();
 
     public Unit () {
-
+        this.itemType = "Unit";
     }
 
     public void addModels(Model model) {

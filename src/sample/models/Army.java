@@ -11,7 +11,7 @@ public class Army extends BaseItem {
     private ObservableList<BaseItem> units = observableArrayList();
 
     public Army () {
-
+        itemType = "Army";
     }
 
     public void addUnits(Unit unit) {

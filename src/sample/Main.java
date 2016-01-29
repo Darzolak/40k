@@ -18,6 +18,9 @@ import sample.view.TreeViewWithItems;
 
 public class Main extends Application {
     private static TreeViewWithItems<BaseItem> treeView;
+    public static Controller controller;
+    public static Scene mainScene;
+    public static SplitPane content;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -27,11 +30,11 @@ public class Main extends Application {
         primaryStage.show();
 
         Pane pane = getMainPane();
-
-        Controller.army = setUpArmy();
+        controller = new Controller();
+        controller.army = setUpArmy();
         refreshTree();
 
-        Scene mainScene = new Scene(pane);
+        mainScene = new Scene(pane);
         primaryStage.setScene(mainScene);
     }
 
@@ -59,7 +62,7 @@ public class Main extends Application {
 
         Pane informationPane = new Pane();
         ScrollPane contentPane = new ScrollPane(informationPane);
-        SplitPane content = new SplitPane();
+        content = new SplitPane();
 
 
 
