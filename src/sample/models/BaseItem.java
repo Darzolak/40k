@@ -15,7 +15,10 @@ public abstract class BaseItem implements HierarchyData<BaseItem> {
         return name;
     }
 
-
+    @Override
+    public String toString() {
+        return name;
+    }
 
 
 

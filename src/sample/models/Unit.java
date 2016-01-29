@@ -12,8 +12,9 @@ public class Unit extends BaseItem {
 
     private ObservableList<BaseItem> models = observableArrayList();
 
-    public Unit () {
+    public Unit (String unitName) {
         this.itemType = "Unit";
+        this.name = unitName;
     }
 
     public void addModels(Model model) {

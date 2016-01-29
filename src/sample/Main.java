@@ -17,7 +17,7 @@ import sample.view.HierarchyTracker;
 import sample.view.TreeViewWithItems;
 
 public class Main extends Application {
-    private static TreeViewWithItems<BaseItem> treeView;
+    public static TreeViewWithItems<BaseItem> treeView;
     public static Controller controller;
     public static Scene mainScene;
     public static SplitPane content;
@@ -41,7 +41,7 @@ public class Main extends Application {
 
     private Army setUpArmy() {
         Army chaosSpaceMarines = new Army();
-        Unit chaosMarines = new Unit();
+        Unit chaosMarines = new Unit("Chaos Space Marines");
         Infantry chaosSpaceMarine = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
         Infantry chaosSpaceMarineCaptain = new Infantry("Aspiring Champion", 4,4,4,4,1,4,2,9,3);
 
