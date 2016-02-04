@@ -10,9 +10,6 @@ public class Weapon {
     private int strength;
     private int ap;
     private WeaponType weaponType;
-
-
-
     private int numberOfShots;
     //endregion
 
@@ -86,6 +83,10 @@ public class Weapon {
     }
 
     public int antiInfantryComparison(Weapon weapon) {
-        return (this.range ^ weapon.range) + this.strength - weapon.strength + (this.ap < 4 ? 3 : (this.ap == 5 ? 1 : 0)) - (weapon.ap < 4 ? 3 : (weapon.ap == 5 ? 1 : 0));
+        int rangeScore = (this.range > weapon.range ? this.range / weapon.range : weapon.range / this.range);
+        int strengthScore = this.strength - weapon.strength;
+        int apScore = (this.ap < 4 ? 3 : (this.ap == 5 ? 1 : 0)) - (weapon.ap < 4 ? 3 : (weapon.ap == 5 ? 1 : 0));
+        int score = rangeScore + strengthScore + apScore;
+        return score;
     }
 }

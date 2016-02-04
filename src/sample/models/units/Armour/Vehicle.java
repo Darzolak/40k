@@ -64,29 +64,23 @@ public abstract class Vehicle extends Model {
 
     public Map<VehicleHitResult, Double> hitAgainstFrontArmour(int strength, int modifier, int numberOfShots) {
         Map<VehicleHitResult, Double> returnedMap = new HashMap<>();
-        returnedMap.put(VehicleHitResult.Penetrated, (((double)6 -  (frontArmour - strength)) / (6 + modifier))* numberOfShots);
+        returnedMap.put(VehicleHitResult.Penetrated, (((double)6 -  (frontArmour - strength)) / (6 + modifier)) * numberOfShots);
         returnedMap.put(VehicleHitResult.Glanced, (((double)7 - (frontArmour - strength)) / (6 + modifier)) * numberOfShots);
         return returnedMap;
     }
 
-    public VehicleHitResult hitAgainstSideArmour(int strengthDiceRoll) {
-        if (strengthDiceRoll - sideArmour < 0) {
-            return VehicleHitResult.Penetrated;
-        }
-        else if (strengthDiceRoll - sideArmour == 0) {
-            return VehicleHitResult.Glanced;
-        }
-        return VehicleHitResult.Nothing;
+    public Map<VehicleHitResult, Double> hitAgainstSideArmour(int strength, int modifier, int numberOfShots) {
+        Map<VehicleHitResult, Double> returnedMap = new HashMap<>();
+        returnedMap.put(VehicleHitResult.Penetrated, (((double)6 -  (sideArmour - strength)) / (6 + modifier)) * numberOfShots);
+        returnedMap.put(VehicleHitResult.Glanced, (((double)7 - (sideArmour - strength)) / (6 + modifier)) * numberOfShots);
+        return returnedMap;
     }
 
-    public VehicleHitResult hitAgainstRearArmour(int strengthDiceRoll) {
-        if (strengthDiceRoll - rearArmour < 0) {
-            return VehicleHitResult.Penetrated;
-        }
-        else if (strengthDiceRoll - rearArmour == 0) {
-            return VehicleHitResult.Glanced;
-        }
-        return VehicleHitResult.Nothing;
+    public Map<VehicleHitResult, Double> hitAgainstRearArmour(int strength, int modifier, int numberOfShots) {
+        Map<VehicleHitResult, Double> returnedMap = new HashMap<>();
+        returnedMap.put(VehicleHitResult.Penetrated, (((double)6 -  (rearArmour - strength)) / (6 + modifier)) * numberOfShots);
+        returnedMap.put(VehicleHitResult.Glanced, (((double)7 - (rearArmour - strength)) / (6 + modifier)) * numberOfShots);
+        return returnedMap;
     }
 
     @Override
