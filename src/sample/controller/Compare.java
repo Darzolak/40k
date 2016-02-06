@@ -35,7 +35,7 @@ public class Compare {
             for (BaseItem model : chargingUnit.getChildren()) {
                 BaseProfile attackingModel = (BaseProfile) model;
                 if (attackingModel.getInitiative() == initiativeStep) {
-                    
+
                 }
             }
         }

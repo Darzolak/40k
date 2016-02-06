@@ -11,7 +11,9 @@ import static javafx.collections.FXCollections.observableArrayList;
  */
 public abstract class Model extends BaseItem {
 
+
     //region Variables
+    protected int ballisticSkill;
     protected Integer invulnerableSave;
     protected Integer coverSave;
     protected ObservableList<Weapon> assaultWeapons = observableArrayList();
@@ -19,6 +21,14 @@ public abstract class Model extends BaseItem {
     //endregion
 
     //region Getters and Setters
+    public int getBallisticSkill() {
+        return ballisticSkill;
+    }
+
+    public void setBallisticSkill(int ballisticSkill) {
+        this.ballisticSkill = ballisticSkill;
+    }
+
     public Integer getInvulnerableSave() {
         return invulnerableSave;
     }

@@ -2,6 +2,7 @@ package sample;
 
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.TreeItem;
+import sample.controller.Tables;
 import sample.models.Army;
 import sample.models.BaseItem;
 import sample.view.scenes.ArmyScene;
@@ -16,6 +17,7 @@ public class Controller {
     public static TreeItem selectedTreeItem = new TreeItem();
     public static Army army = new Army();
     public static HashMap<String, ISceneSwitcher> switchStrategy = new HashMap<String, ISceneSwitcher>();
+    public static Tables tables = new Tables();
 
     public Controller() {
         switchStrategy.put("Army", new ArmyScene());

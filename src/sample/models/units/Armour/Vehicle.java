@@ -13,7 +13,7 @@ import java.util.Map;
 public abstract class Vehicle extends Model {
 
     //region variables
-    protected int ballisticSkill;
+
     protected int frontArmour;
     protected int sideArmour;
     protected int rearArmour;
