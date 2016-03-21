@@ -29,6 +29,8 @@ public class Tables {
         return shootingToHitTable.get(ballisticSkill);
     }
 
+    public int toPenNeeded(int strength, int armourValue) { return armourValue - strength + 1; }
+
     public Tables() {
         shootingToHitTable = new ArrayList<>(Arrays.asList(7, 6, 5, 4, 3, 2));
         ArrayList<Integer> strength0 = new ArrayList<>(Arrays.asList(4, 5, 6, 6, 7, 7, 7, 7, 7, 7, 7));

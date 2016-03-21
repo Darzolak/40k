@@ -38,7 +38,7 @@ public class InfantryScene extends BaseScene implements ISceneSwitcher {
         LabelTitle name = new LabelTitle(infantry.getName());
 
         LabelField weaponSkillLabel = new LabelField("Weapon Skill:", infantry.getWeaponSkill().toString());
-        LabelField ballisticSkillLabel = new LabelField("Ballistic Skill:", infantry.getBallisticSkill().toString());
+        //LabelField ballisticSkillLabel = new LabelField("Ballistic Skill:", infantry.getBallisticSkill().toString());
         LabelField strengthLabel = new LabelField("Strength:", infantry.getStrength().toString());
         LabelField toughnessLabel = new LabelField("Toughness:", infantry.getToughness().toString());
         LabelField woundsLabel = new LabelField("Wounds:", infantry.getWounds().toString());
@@ -47,7 +47,7 @@ public class InfantryScene extends BaseScene implements ISceneSwitcher {
         LabelField leadershipLabel = new LabelField("Leadership:", infantry.getLeadership().toString());
         LabelField armourSaveLabel = new LabelField("Armour Save:", infantry.getArmourSave().toString() + "+");
 
-        basicInfoPane.getChildren().addAll(name, weaponSkillLabel, ballisticSkillLabel, strengthLabel, toughnessLabel, woundsLabel, initiativeLabel, attacksLabel, leadershipLabel, armourSaveLabel);
+        basicInfoPane.getChildren().addAll(name, weaponSkillLabel,  strengthLabel, toughnessLabel, woundsLabel, initiativeLabel, attacksLabel, leadershipLabel, armourSaveLabel);
         return detailsTab;
     }
 

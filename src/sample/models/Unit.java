@@ -3,6 +3,8 @@ package sample.models;
 import javafx.collections.ObservableList;
 import sample.models.units.Model;
 
+import java.util.List;
+
 import static javafx.collections.FXCollections.observableArrayList;
 
 /**
@@ -19,6 +21,20 @@ public class Unit extends BaseItem {
 
     public void addModels(Model model) {
         models.add(model);
+    }
+
+    protected int majorityNumber(List<Integer> nums) {
+        int candidate = 0;
+        int count = 0;
+        for (int num : nums) {
+            if (count == 0)
+                candidate = num;
+            if (num == candidate)
+                count++;
+            else
+                count--;
+        }
+        return candidate;
     }
 
     @Override

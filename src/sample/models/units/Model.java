@@ -62,6 +62,8 @@ public abstract class Model extends BaseItem {
     }
     //endregion
 
+    public int getBestSave(int ap, boolean ignoresCover) { return coverSave > invulnerableSave ? coverSave : invulnerableSave; }
+
     public void addAssaultWeapon(Weapon weaponToAdd) {
         assaultWeapons.add(weaponToAdd);
     }

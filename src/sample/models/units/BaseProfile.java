@@ -41,9 +41,9 @@ public abstract class BaseProfile extends Model {
         this.weaponSkill = weaponSkill;
     }
 
-    public Integer getBallisticSkill() {
+    /*public Integer getBallisticSkill() {
         return ballisticSkill;
-    }
+    }*/
 
     public void setBallisticSkill(Integer ballisticSkill) {
         this.ballisticSkill = ballisticSkill;
@@ -104,9 +104,17 @@ public abstract class BaseProfile extends Model {
     public void setArmourSave(Integer armourSave) {
         this.armourSave = armourSave;
     }
-
-
     //endregion
+
+    @Override
+    public int getBestSave(int ap, boolean ignoresCover) {
+        if (ignoresCover) {
+            return armourSave < invulnerableSave && armourSave < ap ? armourSave : invulnerableSave;
+        }
+        else {
+            return armourSave < invulnerableSave && armourSave < ap ? armourSave < coverSave ? armourSave : coverSave : invulnerableSave < coverSave ? invulnerableSave : coverSave;
+        }
+    }
 
     public List<Integer> getBaseProfile() {
         List<Integer> returnedList =  Arrays.asList(weaponSkill, ballisticSkill, strength, toughness, wounds, initiative, attacks, leadership, armourSave, invulnerableSave, coverSave);
