@@ -8,15 +8,22 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+import sample.controller.SetUp;
+import sample.controller.ShootingPhase;
 import sample.models.Army;
 import sample.models.BaseItem;
-import sample.models.Unit;
-import sample.models.units.Infantry;
-import sample.models.units.Model;
+import sample.models.unit.InfantryUnit;
+import sample.models.unit.Unit;
+import sample.models.unit.units.Infantry.Infantry;
+import sample.models.unit.units.Model;
 import sample.models.wargear.Weapon;
 import sample.models.wargear.WeaponType;
 import sample.view.HierarchyTracker;
 import sample.view.TreeViewWithItems;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main extends Application {
     public static TreeViewWithItems<BaseItem> treeView;
@@ -42,33 +49,7 @@ public class Main extends Application {
     }
 
     private Army setUpArmy() {
-        Army chaosSpaceMarines = new Army();
-        Unit chaosMarines = new Unit("Chaos Space Marines");
-        Infantry chaosSpaceMarine1 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
-        Infantry chaosSpaceMarine2 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
-        Infantry chaosSpaceMarine3 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
-        Infantry chaosSpaceMarine4 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
-        Infantry chaosSpaceMarineCaptain = new Infantry("Aspiring Champion", 4,4,4,4,1,4,2,9,3);
-
-        Weapon bolter = new Weapon(24, 4, 5, WeaponType.Rapid_Fire, 1);
-        Weapon missileLauncher = new Weapon(48, 8, 3, WeaponType.Heavy, 1);
-        Weapon boltPistol = new Weapon(12, 4, 5, WeaponType.Pistol, 1);
-        Weapon chainSword = new Weapon(12, 4, 0, WeaponType.Melee);
-
-        chaosSpaceMarine1.addRangedWeapon(bolter);
-        chaosSpaceMarine2.addRangedWeapon(bolter);
-        chaosSpaceMarine3.addRangedWeapon(bolter);
-        chaosSpaceMarine4.addRangedWeapon(bolter);
-        chaosSpaceMarine4.addRangedWeapon(missileLauncher);
-        chaosSpaceMarineCaptain.addRangedWeapon(boltPistol);
-        chaosSpaceMarineCaptain.addAssaultWeapon(chainSword);
-
-        chaosMarines.addModels(chaosSpaceMarine1);
-        chaosMarines.addModels(chaosSpaceMarine2);
-        chaosMarines.addModels(chaosSpaceMarine3);
-        chaosMarines.addModels(chaosSpaceMarine4);
-        chaosMarines.addModels(chaosSpaceMarineCaptain);
-        chaosSpaceMarines.addUnits(chaosMarines);
+        Army chaosSpaceMarines = SetUp.setUpArmy();
 
         return chaosSpaceMarines;
     }

@@ -1,8 +1,8 @@
-package sample.models.units.Armour;
+package sample.models.unit.units.Armour;
 
 import javafx.collections.ObservableList;
 import sample.models.BaseItem;
-import sample.models.units.Model;
+import sample.models.unit.units.Model;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -61,6 +61,12 @@ public abstract class Vehicle extends Model {
         this.hullPoints = hullPoints;
     }
     //endregion
+
+
+    @Override
+    public int getBestSave(int ap, boolean ignoresCover) {
+        return coverSave > invulnerableSave ? coverSave : invulnerableSave;
+    }
 
     public Map<VehicleHitResult, Double> hitAgainstFrontArmour(int strength, int modifier, int numberOfShots) {
         Map<VehicleHitResult, Double> returnedMap = new HashMap<>();

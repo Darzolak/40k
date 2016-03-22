@@ -1,6 +1,7 @@
 package sample.models;
 
 import javafx.collections.ObservableList;
+import sample.models.unit.Unit;
 
 import static javafx.collections.FXCollections.observableArrayList;
 

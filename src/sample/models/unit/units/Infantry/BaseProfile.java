@@ -1,8 +1,7 @@
-package sample.models.units;
+package sample.models.unit.units.Infantry;
 
-import javafx.collections.ObservableList;
+import sample.models.unit.units.Model;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,7 +12,6 @@ public abstract class BaseProfile extends Model {
     //region Variables
     protected Integer moveSpeed;
     protected Integer weaponSkill;
-    protected Integer ballisticSkill;
     protected Integer strength;
     protected Integer toughness;
     protected Integer wounds;

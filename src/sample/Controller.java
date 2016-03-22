@@ -17,12 +17,13 @@ public class Controller {
     public static TreeItem selectedTreeItem = new TreeItem();
     public static Army army = new Army();
     public static HashMap<String, ISceneSwitcher> switchStrategy = new HashMap<String, ISceneSwitcher>();
-    public static Tables tables = new Tables();
+    public static Tables tables;
 
     public Controller() {
         switchStrategy.put("Army", new ArmyScene());
         switchStrategy.put("Unit", new UnitScene());
         switchStrategy.put("Infantry", new InfantryScene());
+        tables = new Tables();
 
     }
 

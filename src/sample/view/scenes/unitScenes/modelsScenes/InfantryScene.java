@@ -1,16 +1,13 @@
 package sample.view.scenes.unitScenes.modelsScenes;
 
 import javafx.geometry.Insets;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import sample.models.BaseItem;
-import sample.models.units.Infantry;
-import sample.models.units.Model;
+import sample.models.unit.units.Infantry.Infantry;
 import sample.view.controls.LabelField;
 import sample.view.controls.LabelTitle;
 import sample.view.scenes.BaseScene;

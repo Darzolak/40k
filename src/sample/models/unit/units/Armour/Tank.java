@@ -1,4 +1,4 @@
-package sample.models.units.Armour;
+package sample.models.unit.units.Armour;
 
 /**
  * Created by Darzolak on 04-Feb-16.

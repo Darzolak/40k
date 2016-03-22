@@ -3,7 +3,6 @@ package sample.view;
 import javafx.scene.control.TreeItem;
 import sample.Controller;
 import sample.models.BaseItem;
-import sample.models.units.Model;
 
 import java.util.HashMap;
 import java.util.Map;

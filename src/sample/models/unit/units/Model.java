@@ -1,4 +1,4 @@
-package sample.models.units;
+package sample.models.unit.units;
 
 import javafx.collections.ObservableList;
 import sample.models.BaseItem;
@@ -62,7 +62,7 @@ public abstract class Model extends BaseItem {
     }
     //endregion
 
-    public int getBestSave(int ap, boolean ignoresCover) { return coverSave > invulnerableSave ? coverSave : invulnerableSave; }
+    public abstract int getBestSave(int ap, boolean ignoresCover);
 
     public void addAssaultWeapon(Weapon weaponToAdd) {
         assaultWeapons.add(weaponToAdd);

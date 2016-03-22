@@ -6,7 +6,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import sample.Main;
 import sample.models.BaseItem;
-import sample.models.Unit;
+import sample.models.unit.Unit;
 import sample.view.controls.LabelTitle;
 import sample.view.scenes.BaseScene;
 import sample.view.scenes.ISceneSwitcher;

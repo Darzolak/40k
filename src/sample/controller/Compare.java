@@ -1,15 +1,14 @@
 package sample.controller;
 
 import sample.models.BaseItem;
-import sample.models.Unit;
-import sample.models.units.Armour.Tank;
-import sample.models.units.Armour.VehicleHitResult;
-import sample.models.units.BaseProfile;
-import sample.models.units.Model;
+import sample.models.unit.Unit;
+import sample.models.unit.units.Armour.Tank;
+import sample.models.unit.units.Armour.VehicleHitResult;
+import sample.models.unit.units.Infantry.BaseProfile;
+import sample.models.unit.units.Model;
 import sample.models.wargear.Weapon;
 
 import java.util.ArrayList;
-import java.util.DoubleSummaryStatistics;
 import java.util.HashMap;
 import java.util.Map;
 

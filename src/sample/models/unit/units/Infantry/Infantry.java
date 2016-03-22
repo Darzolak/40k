@@ -1,4 +1,4 @@
-package sample.models.units;
+package sample.models.unit.units.Infantry;
 
 import javafx.collections.ObservableList;
 import sample.models.BaseItem;
@@ -21,6 +21,8 @@ public class Infantry extends BaseProfile {
         this.leadership = leadership;
         this.armourSave = armourSave;
         this.itemType = "Infantry";
+        this.invulnerableSave = 7;
+        this.coverSave = 7;
     }
 
     public Infantry(String name, int weaponSkill, int ballisticSkill, int strength, int toughness, int wounds, int initiative,
