@@ -2,6 +2,7 @@ package sample.models.unit;
 
 import sample.Controller;
 import sample.Main;
+import sample.controller.Statistics;
 import sample.models.BaseItem;
 import sample.models.unit.units.Infantry.BaseProfile;
 import sample.models.unit.units.Model;
@@ -24,12 +25,12 @@ public class InfantryUnit extends Unit {
     }
 
     @Override
-    public Map<String, Integer> casualties(int numberOfHits, Weapon weaponFiring, boolean isTest) {
+    public Statistics casualties(int numberOfHits, Weapon weaponFiring, boolean isTest) {
         //Roll to wound for the weapon
-        Map<String, Integer> weaponStatistics = new HashMap<String, Integer>();
+        Statistics weaponStatistics = new Statistics();
 
         int rollNeededToWound = Main.controller.tables.toWoundRollNeeded(weaponFiring.getStrength(), averageToughness);
-        weaponStatistics.put("ToWound", rollNeededToWound);
+        weaponStatistics.setToWound(rollNeededToWound);
 
         return super.casualtyCalc(numberOfHits, rollNeededToWound, weaponFiring, isTest, weaponStatistics);
     }

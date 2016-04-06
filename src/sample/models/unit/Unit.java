@@ -1,6 +1,7 @@
 package sample.models.unit;
 
 import javafx.collections.ObservableList;
+import sample.controller.Statistics;
 import sample.models.BaseItem;
 import sample.models.unit.units.Infantry.BaseProfile;
 import sample.models.unit.units.Model;
@@ -41,9 +42,9 @@ public abstract class Unit extends BaseItem {
         return candidate;
     }
 
-    public abstract Map<String, Integer> casualties(int numberOfHits, Weapon weaponFiring, boolean isTest);
+    public abstract Statistics casualties(int numberOfHits, Weapon weaponFiring, boolean isTest);
 
-    public Map<String, Integer> casualtyCalc(int numberOfHits, int rollNeededToWound, Weapon weaponFiring, boolean isTest, Map<String, Integer> weaponStatistics) {
+    public Statistics casualtyCalc(int numberOfHits, int rollNeededToWound, Weapon weaponFiring, boolean isTest, Statistics weaponStatistics) {
         int numberOfWounds = 0;
         for (int i = 0; i < numberOfHits; i++) {
             Random rand = new Random();
@@ -52,7 +53,7 @@ public abstract class Unit extends BaseItem {
                 numberOfWounds += 1;
             }
         }
-        weaponStatistics.put("NoWounds", numberOfWounds);
+        weaponStatistics.setNoWounds(numberOfWounds);
 
         int numberOfSavesMade = numberOfWounds;
         while (models.size() > 0 && numberOfWounds > 0) {
@@ -76,7 +77,7 @@ public abstract class Unit extends BaseItem {
             }
             numberOfWounds -= 1;
         }
-        weaponStatistics.put("SavesMade", numberOfSavesMade);
+        weaponStatistics.setSavesMade(numberOfSavesMade);
         return weaponStatistics;
     }
 

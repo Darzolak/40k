@@ -27,13 +27,12 @@ public class ShootingPhase {
         return 7.0 - Main.controller.tables.toHitRollNeeded(modelFiring.getBallisticSkill()) / 6;
     }
 
-    public static Map<Weapon, Map<String, Integer>> shootingPhase(Unit unit1, Unit unit2, Map<Weapon, ArrayList<Model>> weapons) {
+    public static Map<Weapon, Statistics> shootingPhase(Unit unit1, Unit unit2, Map<Weapon, ArrayList<Model>> weapons) {
         unitShooting = unit1;
         targetUnit = unit2;
         firingWeapons = weapons;
-        Map<Weapon, Map<String, Integer>> statistics = new HashMap<Weapon, Map<String, Integer>>();
+        Map<Weapon, Statistics> statistics = new HashMap<Weapon, Statistics>();
         for (Weapon weaponFiring : weapons.keySet()) {
-            Map<String, Integer> weaponStatistics = new HashMap<String, Integer>();
             if (targetUnit.getChildren().size() <= 0) {
                 break;
             }
@@ -44,22 +43,22 @@ public class ShootingPhase {
             //Roll to hit for the weapons
             for (Model modelFiring : weapons.get(weaponFiring)) {
                 int rollNeededtoHit = Main.controller.tables.toHitRollNeeded(modelFiring.getBallisticSkill());
-                weaponStatistics.put("ToHitNeeded", rollNeededtoHit);
-                numberOfHitsMade += weaponFiring.getNumberOfShots();
+                numberOfHits += weaponFiring.getNumberOfShots();
                 for (int i = 0; i < weaponFiring.getNumberOfShots(); i++) {
                     Random rand = new Random();
                     int randomNumber = rand.nextInt(6) + 1; // 0-6.
                     if (randomNumber >= rollNeededtoHit) {
-                        numberOfHits += 1;
+                        numberOfHitsMade += 1;
                     }
                 }
             }
-            weaponStatistics.put("NoHitsMade", numberOfHitsMade);
-            weaponStatistics.put("NoHits", numberOfHits);
 
-            Map<String, Integer> tempMap = targetUnit.casualties(numberOfHits, weaponFiring, true);
-            weaponStatistics.putAll(tempMap);
-            statistics.put(weaponFiring, weaponStatistics);
+            Statistics tempMap = targetUnit.casualties(numberOfHits, weaponFiring, true);
+            tempMap.setToHitNeeded(numberOfHitsMade);
+            tempMap.setNoHits(numberOfHits);
+            tempMap.setNoHitsMade(numberOfHitsMade);
+
+            statistics.put(weaponFiring, tempMap);
         }
         return statistics;
     }

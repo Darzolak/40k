@@ -9,6 +9,7 @@ import sample.Main;
 import sample.controller.CombatType;
 import sample.controller.Compare;
 import sample.controller.ShootingPhase;
+import sample.controller.Statistics;
 import sample.models.Army;
 import sample.models.BaseItem;
 import sample.models.unit.Unit;
@@ -104,7 +105,7 @@ public class ArmyScene extends BaseScene implements ISceneSwitcher {
                     }
                 }
 
-                Map<Weapon, Map<String, Integer>> statistics = ShootingPhase.shootingPhase((Unit) shootingCombo.getValue(), (Unit) targetCombo.getValue(), map);
+                Map<Weapon, Statistics> statistics = ShootingPhase.shootingPhase((Unit) shootingCombo.getValue(), (Unit) targetCombo.getValue(), map);
 
                 for (Weapon weaponFiring : statistics.keySet()) {
                     LabelTitle weaponTitle = new LabelTitle(weaponFiring.toString());
