@@ -34,8 +34,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        primaryStage.setMinWidth(900);
-        primaryStage.setMinHeight(500);
+        primaryStage.setMinWidth(1200);
+        primaryStage.setMinHeight(800);
         primaryStage.setTitle("Hello World");
         primaryStage.show();
 

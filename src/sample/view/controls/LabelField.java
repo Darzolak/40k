@@ -10,6 +10,9 @@ public class LabelField extends HBox {
     private Label label;
     private Label value;
 
+    public LabelField() {
+    }
+
     public LabelField(String labelText, String valueText) {
         label = new Label(labelText);
         if (label.getText().length() < 30) {

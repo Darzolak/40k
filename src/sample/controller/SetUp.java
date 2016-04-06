@@ -23,18 +23,28 @@ public class SetUp {
         Infantry chaosSpaceMarine2 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
         Infantry chaosSpaceMarine3 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
         Infantry chaosSpaceMarine4 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarine5 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarine6 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarine7 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarine8 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
+        Infantry chaosSpaceMarine9 = new Infantry("Chaos Space Marine", 4,4,4,4,1,4,1,8,3);
         Infantry chaosSpaceMarineCaptain = new Infantry("Aspiring Champion", 4,4,4,4,1,4,2,9,3);
 
-        Weapon bolter = new Weapon(24, 4, 5, WeaponType.Rapid_Fire, 1);
-        Weapon missileLauncher = new Weapon(48, 8, 3, WeaponType.Heavy, 1);
-        Weapon boltPistol = new Weapon(12, 4, 5, WeaponType.Pistol, 1);
-        Weapon chainSword = new Weapon(12, 4, 0, WeaponType.Melee);
+        Weapon bolter = new Weapon("Bolter", 24, 4, 5, WeaponType.Rapid_Fire, 2);
+        Weapon plasmaGun = new Weapon("Plasma Gun", 24, 7, 2, WeaponType.Rapid_Fire, 2);
+        Weapon missileLauncher = new Weapon("Missile Launcher", 48, 8, 3, WeaponType.Heavy, 1);
+        Weapon boltPistol = new Weapon("Bolt Pistol", 12, 4, 5, WeaponType.Pistol, 1);
+        Weapon chainSword = new Weapon("Chainsword", 12, 4, 0, WeaponType.Melee);
 
         chaosSpaceMarine1.addRangedWeapon(bolter);
         chaosSpaceMarine2.addRangedWeapon(bolter);
         chaosSpaceMarine3.addRangedWeapon(bolter);
         chaosSpaceMarine4.addRangedWeapon(bolter);
-        chaosSpaceMarine4.addRangedWeapon(missileLauncher);
+        chaosSpaceMarine5.addRangedWeapon(bolter);
+        chaosSpaceMarine6.addRangedWeapon(bolter);
+        chaosSpaceMarine7.addRangedWeapon(bolter);
+        chaosSpaceMarine8.addRangedWeapon(plasmaGun);
+        chaosSpaceMarine9.addRangedWeapon(plasmaGun);
         chaosSpaceMarineCaptain.addRangedWeapon(boltPistol);
         chaosSpaceMarineCaptain.addAssaultWeapon(chainSword);
 
@@ -42,6 +52,11 @@ public class SetUp {
         chaosMarines.addModels(chaosSpaceMarine2);
         chaosMarines.addModels(chaosSpaceMarine3);
         chaosMarines.addModels(chaosSpaceMarine4);
+        chaosMarines.addModels(chaosSpaceMarine5);
+        chaosMarines.addModels(chaosSpaceMarine6);
+        chaosMarines.addModels(chaosSpaceMarine7);
+        chaosMarines.addModels(chaosSpaceMarine8);
+        chaosMarines.addModels(chaosSpaceMarine9);
         chaosMarines.addModels(chaosSpaceMarineCaptain);
 
         InfantryUnit chaosMarines1 = new InfantryUnit("Space Marines");

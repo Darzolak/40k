@@ -86,4 +86,19 @@ public abstract class Model extends BaseItem {
         }
         return returnedWeapon;
     }
+
+    public Weapon getRangedAntiInfantryWeapon() {
+        Weapon returnedWeapon = null;
+        for (Weapon weapon : rangedWeapons) {
+            if (returnedWeapon != null) {
+                if (weapon.antiInfantryComparison(returnedWeapon) > 0) {
+                    returnedWeapon = weapon;
+                }
+            }
+            else {
+                returnedWeapon = weapon;
+            }
+        }
+        return returnedWeapon;
+    }
 }

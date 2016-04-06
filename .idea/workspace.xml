@@ -60,21 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Tables.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/Tables.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShootingPhase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/controller/ShootingPhase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,31 +72,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseScene.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/BaseScene.java">
+      <file leaf-file-name="ArmyScene.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/ArmyScene.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+              <caret line="53" column="77" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+              <folding>
+                <element signature="e#2611#2621#0" expanded="true" />
+                <element signature="e#2678#2688#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/controller/Statistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/Unit.java">
+      <file leaf-file-name="Weapon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/models/wargear/Weapon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VehicleUnit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+              <caret line="24" column="104" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -116,23 +109,8 @@
         <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Model.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#714#715#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Infantry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/Infantry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              <folding>
-                <element signature="e#1622#1623#0" expanded="true" />
-                <element signature="e#1649#1650#0" expanded="true" />
-              </folding>
+              <caret line="89" column="45" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/sample/controller/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+              <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,27 +127,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/BaseProfile.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="112" column="24" selection-start-line="112" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc;n#moveSpeed#0;n#BaseProfile#0" expanded="false" />
-                <element signature="n#!!doc;n#getMoveSpeed#0;n#BaseProfile#0" expanded="false" />
-              </folding>
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfantryUnit.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/Unit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfantryUnit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/models/unit/InfantryUnit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44752187">
-              <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VehicleUnit.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6443149">
+              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -209,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/sample/models/Army.java" />
         <option value="$PROJECT_DIR$/src/sample/view/scenes/unitScenes/modelScene/ModelScene.java" />
         <option value="$PROJECT_DIR$/src/sample/view/scenes/BaseScene.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/controls/LabelField.java" />
         <option value="$PROJECT_DIR$/src/sample/view/controls/LabelTitle.java" />
         <option value="$PROJECT_DIR$/src/sample/models/units/Infantry.java" />
         <option value="$PROJECT_DIR$/src/sample/models/BaseItem.java" />
@@ -222,24 +214,27 @@
         <option value="$PROJECT_DIR$/src/sample/controller/Compare.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/AssaultPhase.java" />
         <option value="$PROJECT_DIR$/src/sample/view/scenes/unitScenes/modelsScenes/InfantryScene.java" />
-        <option value="$PROJECT_DIR$/src/sample/models/wargear/Weapon.java" />
         <option value="$PROJECT_DIR$/src/sample/models/units/BaseProfile.java" />
         <option value="$PROJECT_DIR$/src/sample/models/units/Armour/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/sample/models/units/Model.java" />
         <option value="$PROJECT_DIR$/src/sample/models/VehicleUnit.java" />
         <option value="$PROJECT_DIR$/src/sample/models/Unit.java" />
         <option value="$PROJECT_DIR$/src/sample/models/InfantryUnit.java" />
-        <option value="$PROJECT_DIR$/src/sample/models/unit/Unit.java" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/controller/SetUp.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/scenes/ArmyScene.java" />
-        <option value="$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/Tables.java" />
-        <option value="$PROJECT_DIR$/src/sample/controller/ShootingPhase.java" />
         <option value="$PROJECT_DIR$/src/sample/models/unit/units/Infantry/BaseProfile.java" />
         <option value="$PROJECT_DIR$/src/sample/models/unit/units/Infantry/Infantry.java" />
+        <option value="$PROJECT_DIR$/src/sample/view/controls/LabelField.java" />
+        <option value="$PROJECT_DIR$/src/sample/models/wargear/Weapon.java" />
+        <option value="$PROJECT_DIR$/src/sample/models/unit/units/Model.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/ShootingPhase.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/SetUp.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/view/scenes/ArmyScene.java" />
+        <option value="$PROJECT_DIR$/src/sample/models/unit/Unit.java" />
+        <option value="$PROJECT_DIR$/src/sample/controller/Statistics.java" />
         <option value="$PROJECT_DIR$/src/sample/models/unit/InfantryUnit.java" />
+        <option value="$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java" />
       </list>
     </option>
   </component>
@@ -255,7 +250,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -288,8 +283,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,54 +338,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scenes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -449,40 +395,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="units" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="units" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Infantry" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,7 +422,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -889,7 +802,7 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -904,6 +817,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16875" sideWeight="0.6703755" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09820486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -919,7 +833,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -947,20 +860,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/javafx-src.zip!/javafx/scene/control/SelectionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/javafx-src.zip!/javafx/scene/control/MultipleSelectionModelBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="404" column="0" selection-start-line="404" selection-start-column="0" selection-end-line="404" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/javafx-src.zip!/javafx/beans/property/ReadOnlyIntegerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1021,12 +920,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4029575">
           <caret line="1656" column="0" selection-start-line="1656" selection-start-column="0" selection-end-line="1656" selection-end-column="0" />
-          <folding>
-            <element signature="e#21437#21438#0" expanded="false" />
-            <element signature="e#21500#21501#0" expanded="false" />
-            <element signature="e#67472#67473#0" expanded="false" />
-            <element signature="e#67558#67559#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,9 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="931" column="0" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
-          <folding>
-            <element signature="e#40535#40536#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="25" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,20 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/controls/LabelField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/controls/LabelTitle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1104,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/wargear/WeaponType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/AssaultPhase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1118,21 +986,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/Compare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/unitScenes/modelsScenes/InfantryScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="45" column="91" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,18 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25936198">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/wargear/Weapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#range#0;n#Weapon#0" expanded="false" />
-            <element signature="n#!!doc;n#getRange#0;n#Weapon#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1167,9 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,10 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="479" column="0" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
-          <folding>
-            <element signature="e#10189#10190#0" expanded="true" />
-            <element signature="e#10216#10217#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,10 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding>
-            <element signature="e#2266#2267#0" expanded="false" />
-            <element signature="e#2307#2308#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,7 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="155" column="0" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,7 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,10 +1073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43002915">
           <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
-          <folding>
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1253,27 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/ArmyScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="e#2454#2464#0" expanded="true" />
-            <element signature="e#2856#2866#0" expanded="true" />
-            <element signature="e#2923#2933#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,20 +1091,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/BaseProfile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
-          <folding />
+          <caret line="112" column="24" selection-start-line="112" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="n#!!doc;n#moveSpeed#0;n#BaseProfile#0" expanded="false" />
+            <element signature="n#!!doc;n#getMoveSpeed#0;n#BaseProfile#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#664#665#0" expanded="false" />
+            <element signature="e#715#716#0" expanded="false" />
+            <element signature="e#757#758#0" expanded="false" />
+            <element signature="e#796#797#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#885#886#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1194#1195#0" expanded="false" />
+            <element signature="e#1243#1244#0" expanded="false" />
+            <element signature="e#1283#1284#0" expanded="false" />
+            <element signature="e#1320#1321#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1403#1404#0" expanded="false" />
+            <element signature="e#1445#1446#0" expanded="false" />
+            <element signature="e#1479#1480#0" expanded="false" />
+            <element signature="e#1508#1509#0" expanded="false" />
+            <element signature="e#1553#1554#0" expanded="false" />
+            <element signature="e#1589#1590#0" expanded="false" />
+            <element signature="e#1627#1628#0" expanded="false" />
+            <element signature="e#1660#1661#0" expanded="false" />
+            <element signature="e#1713#1714#0" expanded="false" />
+            <element signature="e#1757#1758#0" expanded="false" />
+            <element signature="e#1792#1793#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1869#1870#0" expanded="false" />
+            <element signature="e#1907#1908#0" expanded="false" />
+            <element signature="e#1945#1946#0" expanded="false" />
+            <element signature="e#1978#1979#0" expanded="false" />
+            <element signature="e#2031#2032#0" expanded="false" />
+            <element signature="e#2075#2076#0" expanded="false" />
+            <element signature="e#2113#2114#0" expanded="false" />
+            <element signature="e#2146#2147#0" expanded="false" />
+            <element signature="e#2199#2200#0" expanded="false" />
+            <element signature="e#2243#2244#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3050#3051#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/Infantry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <element signature="e#714#715#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1722#1723#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1311,71 +1163,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/ShootingPhase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/Unit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/BaseScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/controls/LabelTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/BaseProfile.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/view/controls/LabelField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="24" selection-start-line="112" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="38" />
           <folding>
-            <element signature="n#!!doc;n#moveSpeed#0;n#BaseProfile#0" expanded="false" />
-            <element signature="n#!!doc;n#getMoveSpeed#0;n#BaseProfile#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#667#668#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#751#752#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#823#824#0" expanded="false" />
+            <element signature="e#861#862#0" expanded="false" />
+            <element signature="e#907#908#0" expanded="false" />
+            <element signature="e#947#948#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/csvReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/Compare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/models/wargear/WeaponType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/SetUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <caret line="28" column="81" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Infantry/Infantry.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/ShootingPhase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
           <folding>
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/models/wargear/Weapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="104" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/units/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="45" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/scenes/ArmyScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="77" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+          <folding>
+            <element signature="e#2611#2621#0" expanded="true" />
+            <element signature="e#2678#2688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/models/unit/InfantryUnit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44752187">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/models/unit/VehicleUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6443149">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

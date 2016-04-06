@@ -6,6 +6,7 @@ package sample.models.wargear;
 public class Weapon {
 
     //region variables
+    private String name;
     private int range;
     private int strength;
     private int ap;
@@ -13,14 +14,16 @@ public class Weapon {
     private int numberOfShots;
     //endregion
 
-    public Weapon(int range, int strength, int ap, WeaponType weaponType) {
+    public Weapon(String name, int range, int strength, int ap, WeaponType weaponType) {
+        this.name = name;
         this.range = range;
         this.strength = strength;
         this.ap = ap;
         this.weaponType = weaponType;
     }
 
-    public Weapon(int range, int strength, int ap, WeaponType weaponType, int numberOfShots) {
+    public Weapon(String name, int range, int strength, int ap, WeaponType weaponType, int numberOfShots) {
+        this.name = name;
         this.range = range;
         this.strength = strength;
         this.ap = ap;
@@ -88,5 +91,10 @@ public class Weapon {
         int apScore = (this.ap < 4 ? 3 : (this.ap == 5 ? 1 : 0)) - (weapon.ap < 4 ? 3 : (weapon.ap == 5 ? 1 : 0));
         int score = rangeScore + strengthScore + apScore;
         return score;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

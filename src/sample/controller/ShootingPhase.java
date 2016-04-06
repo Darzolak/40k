@@ -27,31 +27,40 @@ public class ShootingPhase {
         return 7.0 - Main.controller.tables.toHitRollNeeded(modelFiring.getBallisticSkill()) / 6;
     }
 
-    public static Unit shootingPhase(Unit unit1, Unit unit2, Map<Weapon, ArrayList<Model>> weapons) {
+    public static Map<Weapon, Map<String, Integer>> shootingPhase(Unit unit1, Unit unit2, Map<Weapon, ArrayList<Model>> weapons) {
         unitShooting = unit1;
         targetUnit = unit2;
         firingWeapons = weapons;
+        Map<Weapon, Map<String, Integer>> statistics = new HashMap<Weapon, Map<String, Integer>>();
         for (Weapon weaponFiring : weapons.keySet()) {
+            Map<String, Integer> weaponStatistics = new HashMap<String, Integer>();
             if (targetUnit.getChildren().size() <= 0) {
                 break;
             }
 
             int numberOfHits = 0;
+            int numberOfHitsMade = 0;
 
             //Roll to hit for the weapons
             for (Model modelFiring : weapons.get(weaponFiring)) {
                 int rollNeededtoHit = Main.controller.tables.toHitRollNeeded(modelFiring.getBallisticSkill());
+                weaponStatistics.put("ToHitNeeded", rollNeededtoHit);
+                numberOfHitsMade += weaponFiring.getNumberOfShots();
                 for (int i = 0; i < weaponFiring.getNumberOfShots(); i++) {
                     Random rand = new Random();
-                    int randomNumber = rand.nextInt(6) + 1; // 0-9.
+                    int randomNumber = rand.nextInt(6) + 1; // 0-6.
                     if (randomNumber >= rollNeededtoHit) {
                         numberOfHits += 1;
                     }
                 }
             }
+            weaponStatistics.put("NoHitsMade", numberOfHitsMade);
+            weaponStatistics.put("NoHits", numberOfHits);
 
-            targetUnit.casualties(numberOfHits, weaponFiring);
+            Map<String, Integer> tempMap = targetUnit.casualties(numberOfHits, weaponFiring, true);
+            weaponStatistics.putAll(tempMap);
+            statistics.put(weaponFiring, weaponStatistics);
         }
-        return targetUnit;
+        return statistics;
     }
 }

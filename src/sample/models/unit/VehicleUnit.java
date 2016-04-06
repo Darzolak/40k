@@ -7,9 +7,7 @@ import sample.models.unit.units.Armour.Vehicle;
 import sample.models.unit.units.Model;
 import sample.models.wargear.Weapon;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by Darzolak on 21-Mar-16.
@@ -36,38 +34,14 @@ public class VehicleUnit extends Unit {
     }
 
     @Override
-    public Unit casualties(int numberOfHits, Weapon weaponFiring) {
-        //Roll to wound for the weapon
-        //todo change this shit
-        //todo pick model to destroy
-        //todo refactor this shit out
+    public Map<String, Integer> casualties(int numberOfHits, Weapon weaponFiring, boolean isTest) {
+        //Roll to Pen for the weapon
+        Map<String, Integer> weaponStatistics = new HashMap<String, Integer>();
+
         int rollNeededToPen = Main.controller.tables.toPenNeeded(weaponFiring.getStrength(), this.getAverageFrontArmour());
+        weaponStatistics.put("ToPen", rollNeededToPen);
 
-        int numberOfPens = 0;
-        for (int i = 0; i < numberOfHits; i++) {
-            Random rand = new Random();
-            int randomNumber = rand.nextInt(6) + 1; // 1-6.
-            if (randomNumber >= rollNeededToPen) {
-                numberOfPens += 1;
-            }
-        }
-
-        while (this.getChildren().size() > 0 && numberOfPens > 0) {
-            for (int i = 0; i < numberOfHits; i++) {
-                Random rand = new Random();
-                int randomNumber = rand.nextInt(6) + 1; // 0-9.
-                if (randomNumber >= ((Vehicle) models.get(0)).getBestSave(weaponFiring.getAp(), false)) {
-                    Vehicle targetVehicle = ((Vehicle) models.get(0));
-
-                    targetVehicle.setHullPoints(targetVehicle.getHullPoints() - 1);
-
-                    if (targetVehicle.getHullPoints() <= 0) {
-                        models.remove(targetVehicle);
-                    }
-                }
-            }
-        }
-        return this;
+        return super.casualtyCalc(numberOfHits, rollNeededToPen, weaponFiring, isTest, weaponStatistics);
     }
 
     @Override

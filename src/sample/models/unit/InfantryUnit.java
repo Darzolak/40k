@@ -7,9 +7,7 @@ import sample.models.unit.units.Infantry.BaseProfile;
 import sample.models.unit.units.Model;
 import sample.models.wargear.Weapon;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * Created by Darzolak on 21-Mar-16.
@@ -26,41 +24,14 @@ public class InfantryUnit extends Unit {
     }
 
     @Override
-    public Unit casualties(int numberOfHits, Weapon weaponFiring) {
+    public Map<String, Integer> casualties(int numberOfHits, Weapon weaponFiring, boolean isTest) {
         //Roll to wound for the weapon
-        //todo change this shit
-        //todo pick model to destroy
+        Map<String, Integer> weaponStatistics = new HashMap<String, Integer>();
+
         int rollNeededToWound = Main.controller.tables.toWoundRollNeeded(weaponFiring.getStrength(), averageToughness);
+        weaponStatistics.put("ToWound", rollNeededToWound);
 
-        int numberOfWounds = 0;
-        for (int i = 0; i < numberOfHits; i++) {
-            Random rand = new Random();
-            int randomNumber = rand.nextInt(6) + 1; // 0-9.
-            if (randomNumber >= rollNeededToWound) {
-                numberOfWounds += 1;
-            }
-        }
-
-        while (models.size() > 0 && numberOfWounds > 0) {
-            for (int i = 0; i < numberOfHits; i++) {
-                if (models.size() <= 0) {
-                    break;
-                }
-                Random rand = new Random();
-                int randomNumber = rand.nextInt(6) + 1; // 0-9.
-                if (randomNumber < ((BaseProfile)models.get(0)).getBestSave(weaponFiring.getAp(), false)) {
-                    BaseProfile targetModel = ((BaseProfile)models.get(0));
-
-                    targetModel.setWounds(targetModel.getWounds() - 1);
-
-                    if (targetModel.getWounds() <= 0) {
-                        models.remove(targetModel);
-                    }
-                }
-            }
-            numberOfWounds -= 1;
-        }
-        return this;
+        return super.casualtyCalc(numberOfHits, rollNeededToWound, weaponFiring, isTest, weaponStatistics);
     }
 
     @Override

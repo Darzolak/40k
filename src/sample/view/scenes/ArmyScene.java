@@ -2,6 +2,7 @@ package sample.view.scenes;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import sample.Main;
@@ -14,6 +15,7 @@ import sample.models.unit.Unit;
 import sample.models.unit.units.Model;
 import sample.models.wargear.Weapon;
 import sample.models.wargear.WeaponType;
+import sample.view.controls.LabelField;
 import sample.view.controls.LabelTitle;
 
 import java.util.ArrayList;
@@ -60,23 +62,15 @@ public class ArmyScene extends BaseScene implements ISceneSwitcher {
     private Tab getUnitComparisonTab() {
         Tab detailsTab = new Tab();
         detailsTab.setText("Shooting Phase theory");
-        Pane basicInfoPane = new VBox(10);
+        Pane basicInfoPane = new HBox(10);
+        Pane basicControls = new VBox(10);
+        Pane detailedStatistics = new VBox(10);
         basicInfoPane.setBorder(null);
         basicInfoPane.setPadding(new Insets(25, 25, 25, 25));
         ScrollPane wrapper = new ScrollPane(basicInfoPane);
         detailsTab.setContent(wrapper);
         Compare.compareAgainstLightVehicle(CombatType.Ranged, ((Unit) army.getChildren().get(0)), 12);
         LabelTitle name = new LabelTitle(army.getName());
-
-        ListView<BaseItem> unitContentsListView = new ListView<BaseItem>(army.getChildren());
-
-        Button selectButton = new Button("Select");
-
-        selectButton.setOnAction((event) -> {
-            if (unitContentsListView.getSelectionModel().getSelectedItem() != null) {
-                Main.treeView.selectItem(unitContentsListView.getSelectionModel().getSelectedItem());
-            }
-        });
 
         ComboBox<BaseItem> shootingCombo = new ComboBox<BaseItem>();
         ComboBox<BaseItem> targetCombo = new ComboBox<BaseItem>();
@@ -86,20 +80,51 @@ public class ArmyScene extends BaseScene implements ISceneSwitcher {
 
         Button shootBtn = new Button("Shoot");
         shootBtn.setOnAction((event) -> {
-            Map<Weapon, ArrayList<Model>> map = new HashMap<Weapon, ArrayList<Model>>() {
-            };
-            Weapon bolter = new Weapon(24, 4, 5, WeaponType.Rapid_Fire, 1);
-            ArrayList<Model> models = new ArrayList<>();
-            for (BaseItem item : shootingCombo.getValue().getChildren()) {
-                models.add((Model)item);
-            }
+                detailedStatistics.getChildren().clear();
+                Map<Weapon, ArrayList<Model>> map = new HashMap<Weapon, ArrayList<Model>>() {
+                };
 
-            map.put(bolter, models);
-            ShootingPhase.shootingPhase((Unit)shootingCombo.getValue(), (Unit)targetCombo.getValue(), map);
+                Weapon tempWeapon = null;
+                ArrayList<Model> models = new ArrayList<>();
+                for (BaseItem item : shootingCombo.getValue().getChildren()) {
+                    Model model = (Model) item;
 
-        });
+                    tempWeapon = model.getRangedAntiInfantryWeapon();
 
-        basicInfoPane.getChildren().addAll(name,unitContentsListView,selectButton, shootingCombo, targetCombo, shootBtn);
+                    ArrayList<Model> tempModels = map.get(tempWeapon);
+                    if (tempModels == null) {
+                        models = new ArrayList<>();
+                        models.add(model);
+                        map.put(tempWeapon, models);
+                    }
+                    else
+                    {
+                        tempModels.add(model);
+                        map.put(tempWeapon, models);
+                    }
+                }
+
+                Map<Weapon, Map<String, Integer>> statistics = ShootingPhase.shootingPhase((Unit) shootingCombo.getValue(), (Unit) targetCombo.getValue(), map);
+
+                for (Weapon weaponFiring : statistics.keySet()) {
+                    LabelTitle weaponTitle = new LabelTitle(weaponFiring.toString());
+
+                    LabelField noHitsMadeLabel = new LabelField("Number of Hits Made:", statistics.get(weaponFiring).get("NoHitsMade").toString());
+                    LabelField toHitNeededLabel = new LabelField("To Hit Roll Needed:", statistics.get(weaponFiring).get("ToHitNeeded").toString());
+                    LabelField noHitsLabel = new LabelField("Number of Hits:", statistics.get(weaponFiring).get("NoHits").toString());
+                    LabelField toWoundLabel = new LabelField("To Wound Roll Needed:", statistics.get(weaponFiring).get("ToWound").toString());
+                    LabelField noWoundsLabel = new LabelField("Number of Wounds:", statistics.get(weaponFiring).get("NoWounds").toString());
+                    LabelField savesMadeLabel = new LabelField("Number of Saves Made:", statistics.get(weaponFiring).get("SavesMade").toString());
+
+                    detailedStatistics.getChildren().addAll(weaponTitle, toHitNeededLabel, toWoundLabel, noHitsMadeLabel, noHitsLabel, noWoundsLabel, savesMadeLabel);
+                }
+            });
+
+        basicControls.getChildren().addAll(name, shootingCombo, targetCombo, shootBtn);
+
+
+
+        basicInfoPane.getChildren().addAll(basicControls, detailedStatistics);
         return detailsTab;
     }
 
